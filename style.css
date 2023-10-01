@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: rgb(0, 60, 255);
+}
+.navegacion-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    background-color: rgb(0, 132, 255);
+    border-radius: 0 0 1.5rem 1.5rem;
+
+}
+.navegacion-header a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: .5rem 0 ;
+}
+.navegacion-header a:hover{
+    border-bottom: 2px solid rgb(0, 225, 255);
+    margin: 0 1rem 0 1rem;
+}
+@media (min-width: 850px) {
+    .navegacion-header {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+/*Datos Personales*/
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+@media (min-width: 720px) {
+    .container {
+        width: 80%;
+    }
+}
+#datos-personales {
+    background-color: rgb(0, 60, 255);
+}
+.datos-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.datos-p h1{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.55em;
+}
+.datos-p img{
+    width: 100px;
+    height: 100px;
+}
+@media (min-width: 657px) {
+    .datos-p img{
+        width: 150px;
+        height: 150px;
+    }
+}
+.informacion-personal {
+    padding: .5rem 0;
+    background-color: rgb(206, 226, 243);
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.dato-separado {
+    display: grid;
+    width: 100%;
+    justify-items: center; 
+    /*margin: .2rem .3rem; */ 
+}
+.dato-separado:after {
+    width: 80%; 
+    height: 2px; 
+    margin: 0 auto;
+    background-color: rgb(0, 60, 255);
+    content: "";
+}
+.dato-separado p{
+    font-size: .65rem;
+}
+@media (min-width: 300px) {
+    .dato-separado p {
+        font-size: 1rem;
+    }
+}
+.pregunta {
+    color: rgb(0, 60, 255);
+    font-weight: 600;
+}
+.respuesta {
+    color: black;
+    font-weight: 600;
+}
+@media (min-width: 480px) {
+    .dato-separado {
+        grid-template-columns: 1fr 3fr;
+        justify-items: start;
+    }
+    .pregunta {
+        margin-left: 2rem;
+    }
+}
+/*Idiomas*/
+#idiomas {
+    background-color: rgb(206, 226, 243);
+    padding-bottom: 1rem;
+}
+.idiom h2{
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.idioma {
+    margin: 0 auto;
+}
+.dato-separado2 {
+    display: grid;
+    width: 100%;
+    justify-items: center; 
+    /*margin: .2rem .3rem; */ 
+}
+@media (min-width: 480px) {
+    .dato-separado2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .idioma {
+        width: 30%;
+    }
+}
+@media (min-width:1200px) {
+    .idioma {
+        width: 15%;
+    }
+}
+/* Lenguajes/Frameworks */
+#lenguajes-frameworks {
+    background-color: rgb(0, 60, 255);
+    padding: 1rem 0 1rem 0;
+}
+#lenguajes-frameworks h2,
+h3{
+    text-align: center;
+    font-size: 1.3em;
+}
+.skills {
+    padding: 1rem 0 1rem 0;
+}
+.skill {
+    margin: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.skill-main img{
+    width: 50px;
+    height: 50px;
+}
+.skill-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: .3rem;
+}
+
+.nombre-skill {
+    font-weight: 700;
+}
+.barra {
+    border-radius: .5rem;
+    position: relative;
+    width: 120px;
+    height: 15px;
+}
+.progreso {
+    border-radius: .5rem;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    height: 5px;
+}
+/* Skills Color */
+.html-b{
+    background-color: rgb(233, 191, 136); 
+}
+.html-p{
+    background-color: rgb(238, 155, 31);
+    width: 93px;
+}
+.css-b{
+    background-color: rgb(136, 186, 233); 
+}
+.css-p{
+    background-color: rgb(31, 103, 238);
+    width: 88px;
+}
+.js-b{
+    background-color: rgb(252, 250, 152); 
+}
+.js-p{
+    background-color: rgb(248, 252, 24);
+    width: 72px;
+}
+.php-b{
+    background-color: rgb(235, 152, 252); 
+}
+.php-p{
+    background-color: rgb(142, 24, 252);
+    width: 54px;
+}
+.mysql-b{
+    background-color: rgb(152, 252, 197); 
+}
+.mysql-p{
+    background-color: rgb(24, 252, 184);
+    width: 77px;
+}
+.react-b{
+    background-color: rgb(152, 154, 252); 
+}
+.react-p{
+    background-color: rgb(24, 28, 252);
+    width: 36px;
+}
+.flutter-b{
+    background-color: rgb(152, 220, 252); 
+}
+.flutter-p{
+    background-color: rgb(24, 199, 252);
+    width: 22px;
+}
+.laravel-b{
+    background-color: rgb(252, 152, 152); 
+}
+.laravel-p{
+    background-color: rgb(252, 24, 24);
+    width: 35px;
+}
+@media (min-width:200px) {
+    .skill {
+        margin: 30px;
+    }
+}
+@media(min-width: 260px) {
+    .skill{
+        margin: 30px;
+    }
+    .barra::after{
+        content: "mejorando";
+        color: white;
+        position: absolute;
+        left: 130px;
+    }
+}
+
+@media (min-width: 520px) {
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+
+    }
+}
+@media (min-width: 750px) {
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skill-main img{
+        width: 75px;
+        height: 75px;
+    }
+}
+@media (min-width: 1200px) {
+    .skill {
+        margin: 30px 50px;
+    }
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/*Proximos*/
+#lenguajes-frameworks h3{
+    margin-bottom: 1rem;
+}
+.proximos {
+    gap: 1.5rem;
+    display: grid;
+}
+.proximo {
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+}
+.proximo p{
+    color: white;
+}
+.proximo img{
+    border-radius: 1.75rem;
+    background-color: white;
+    width: 90px;
+    height: 70px;
+}
+@media (min-width:300px) {
+    .proximos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:600px) {
+    .proximo img {
+        width: 120px;
+        height: 100px;
+    }
+    .proximos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1200px) {
+    .proximos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*Tecnologias*/
+#herramientas {
+    padding: .5rem 0 1.5rem 0;
+    background-color: rgb(206, 226, 243);
+}
+#herramientas h2{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+.tecnologias {
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+}
+@media (min-width:500px) {
+    .tecnologias {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+@media (min-width:200px) {
+    .tecnologia {
+        flex-direction: row;
+    }
+}
+@media (min-width:900px) {
+    .tecnologias {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1200px) {
+    .tecnologias {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+.tecnologia img {
+    width: 60px;
+    height: 60px;
+}
+#proyectos {
+    background-color: rgb(0, 60, 255);
+    padding: 1rem 0;
+}
+#proyectos h2{
+    text-align: center;
+    padding: 1rem 0;
+}
+.proyects {
+    display: grid;
+}
+@media (min-width:520px) {
+    .proyects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1200px) {
+    .proyects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.proyecto {
+    display: flex;
+    flex-direction: column;
+}
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    justify-items: center;
+    background-color: rgb(206, 226, 243);
+    border-radius: 1rem;
+}
+.descripcion :nth-child(1) {
+    padding-top: .5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.descripcion :nth-child(2) {
+    width: 90%;
+    height: 130px;
+    position: center center;
+    margin: .5rem auto;
+}
+.descripcion :nth-child(3) {
+    margin: .5rem;
+    text-align: center;
+}
+.descripcion p span {
+    color: rgb(48, 235, 48);
+    text-shadow: 0 0 2px rgb(48, 235, 48);
+    font-size: 1.2rem;
+}
+.proyecto a {
+    background-color: white;
+    padding: .5rem 2rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 0px 20px  white;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+@media (min-width: 350px) {
+    .descripcion :nth-child(2) {
+        height: 170px;
+    }
+}
+@media (min-width: 900px) {
+    .descripcion :nth-child(2) {
+        height: 250px;
+    }
+}
+footer{
+    background-color: rgb(0, 132, 255);
+}
+footer p{
+    font-weight: 600;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+
